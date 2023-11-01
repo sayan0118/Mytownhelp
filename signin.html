@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+     background-size: cover;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color: rgb(20, 20, 20);
+ background-color:rgb(151, 177, 145);
+    }
+    .signup{
+        font-style:normal;
+        font-family:'Trebuchet MS';
+        text-align: center;
+        color: rgb(241, 247, 247);
+        top: 30px;
+    }
+    .fgpwd{
+            font-style:normal;
+            font-family:'Trebuchet MS';
+            text-align: center;
+            color: rgb(39, 179, 179);
+            top: 30px;
+    }
+* {
+  box-sizing: border-box;
+}
+
+p{
+  margin: 0;
+  top: 90%;
+  left: 150%;  
+}
+
+img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+/* style the container */
+.container {
+  position: relative;
+  border-radius: 5px;
+  background-color:rgb(151, 177, 145);
+  padding: 20px 0 30px 0;
+} 
+
+.btmlftcontainer { 
+  height: 40px;
+  position: relative;
+}
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btmrgtcontainer { 
+  height: 40px;
+  position: relative;
+}
+.center2 {
+  margin: 0;
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.button1 {
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 15px 32px;
+  text-align:center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  position: relative;
+  background-color: #122e01;}
+
+  .button2 {
+  border: none;
+  color: white;
+  width: 100%;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #504f4f;}
+
+/* style inputs and link buttons */
+input,
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none; /* remove underline from anchors */
+}
+
+input:hover,
+.btn:hover {
+  opacity: 1;
+}
+
+/* add appropriate colors to fb, twitter and google buttons */
+.fb {
+  background-color: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background-color: #55ACEE;
+  color: white;
+}
+
+.google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #054d6e;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Two-column layout */
+.col {
+  width: 30%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+
+/* Two-column layout */
+.col2 {
+  width: 30%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+}
+.col3 {
+  width: 50%;
+  margin: auto;
+  padding: 0 50px;
+  margin-top: 6px;
+  left: 0;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* vertical line */
+.vl {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border: 2px solid #ddd;
+  height: 175px;
+}
+
+/* text inside the vertical line */
+.vl-innertext {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  padding: 8px 10px;
+}
+
+/* hide some text on medium and large screens */
+.hide-md-lg {
+  display: none;
+}
+
+/* bottom container */
+.bottom-container {
+  text-align: center;
+  background-color: #666;
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* Responsive layout - when the screen is less than 650px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  .col {
+    width: 100%;
+    margin-top: 0;
+  }
+  /* hide the vertical line */
+  .vl {
+    display: none;
+  }
+  /* show the hidden text on small screens */
+  .hide-md-lg {
+    display: block;
+    text-align: center;
+  }
+}
+</style>
+</head>
+<body>
+<!--
+    <img src="MTH4-Logo.png" alt="Girl in a jacket" style="width:800px;height:150px;" >
+-->
+
+<div class="container">
+  <form action="login.php" method="post">
+
+      <div class="row">
+      <h2 style="text-align:center">Sign In</h2>
+<!--
+      <div class="vl">
+        <span class="vl-innertext">or</span>
+      </div>
+
+      <div class="col">
+        <a href="signup.html" class="fb btn">
+          <i class="fa fa-facebook fa-fw"></i> Login with Facebook
+         </a>
+        <a href="signup.html" class="twitter btn">
+          <i class="fa fa-twitter fa-fw"></i> Login with Twitter
+        </a>
+        <a href="signup.html" class="google btn"><i class="fa fa-google fa-fw">
+          </i> Login with Google+
+        </a>
+      </div>
+-->      
+      <div class="col">
+        <div class="hide-md-lg">
+          <p>Or sign in manually:</p>
+        </div>
+
+        <input type="text" name="user-name" placeholder="Username" required>
+        <input type="password" name="user-pass" placeholder="Password" required>
+        <input type="submit" value="Submit" name="login-btn">
+        <button class="button button2" onclick="window.location.href='forgotpassword.html';" >Forgot Pasword</button>
+      </div>
+
+    </div>
+  </form>
+</div>
+<br>
+<table  class="center2">
+    <tr>
+        <td>
+            <h4 style="color: #350802;text-align: center;">Not a member yet? We need your help!!</h4>
+        </td>
+    </tr>
+</table>
+
+<div class="col2">
+    <button class="button button1" onclick="window.location.href='signup.php';" >Sign Up!!</button>
+</div>
+
+</body>
+</html>

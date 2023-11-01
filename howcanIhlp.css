@@ -1,0 +1,246 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  font-size: 120%;
+  background: #f0c8e0;
+}
+
+   /* Clear floats */
+   .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.header {
+  width: 30%;
+  margin: 5px auto 0px;
+  color: white;
+  background: #5F9EA0;
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 20px;
+  height: 5%;
+  font-family: 'Trebuchet MS';
+  font-size: 15px;
+}
+
+.header0 {
+  width: 80%;
+  height: 10%;
+  margin: 10px auto 0px;
+  color: rgb(1, 37, 1);
+  text-align: center;
+  border: 1px solid #B0C4DE;
+  border-bottom: none;
+  border-radius: 10px 10px 0px 0px;
+  padding: 15px;
+  font-family: 'Trebuchet MS';
+  font-size: 10px;
+}
+
+.img {
+    width: 30%;
+    margin: 50px auto 0px;
+    color: white;
+    background: #5F9EA0;
+    text-align: center;
+    border: 1px solid #B0C4DE;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 20px;
+    left: 0%;
+  }
+
+form, .content {
+  width: 30%;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #B0C4DE;
+  background: rgb(250, 243, 243);
+  border-radius: 0px 0px 10px 10px;
+}
+.input-group {
+  margin: 5px 0px 5px 0px;
+}
+.input-group label {
+  display: block;
+  font-family: 'Trebuchet MS';
+  text-align: left;
+  margin: 3px;
+  font-size: 14px;
+  color: #1a1818;
+}
+.input-group input {
+  height: 10px;
+  width: 93%;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  font-family: 'Trebuchet MS';
+}
+.input-group2 label {
+    display: block;
+    font-family: 'Trebuchet MS';
+    text-align: left;
+    margin: 3px;
+    font-size: 14px;
+    color: #161616;
+  }
+
+.input-group2 input {
+    height: 120px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-family: 'Trebuchet MS';
+  }
+
+.btn {
+  padding: 10px;
+  font-size: 15px;
+  color: white;
+  background: #5F9EA0;
+  border: none;
+  border-radius: 5px;
+}
+.error {
+  width: 92%; 
+  margin: 0px auto; 
+  padding: 10px; 
+  border: 1px solid #a94442; 
+  color: #a94442; 
+  background: #f2dede; 
+  border-radius: 5px; 
+  text-align: left;
+}
+
+
+    /* Set a style for all buttons */
+    button {
+      background-color: #036440;
+      color: white;
+      padding: 5px 5px;
+      margin: 4px 0;
+      border: none;
+      cursor: pointer;
+      width: 20%;
+      opacity: 0.9;
+      margin-left: 140px;
+    }
+    
+    
+    
+    button:hover {
+      opacity:1;
+    }
+    
+    /* Extra styles for the cancel button */
+    .cancelbtn {
+      padding: 14px 20px;
+      background-color: #e91505;
+      width: 10%;
+    }
+    
+    /* Float cancel and signup buttons and add an equal width */
+    .cancelbtn, .signupbtn {
+      float:left;
+      width: 40%;
+    }
+    .topnav {
+      background-color: #333;
+      overflow: hidden;
+      font-family:'Trebuchet MS';
+    }
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16 px;
+    font-family:'Trebuchet MS';
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  .success{
+    width: 55%;
+    text-align: center;
+    color: #9fd2f0;
+    font-family:'Trebuchet MS';
+    font-size: small;
+    margin: 0;
+    position: absolute;
+    top: 15%;
+    left: 22%  
+  }
+ 
+  .success2{
+    width: 35%;
+    text-align: center;
+    color: #03a559;
+    font-family:'Trebuchet MS';
+    font-size: small;
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left: 15%  
+  }
+  
+    .error{
+    width: 35%;
+    text-align: center;
+    background-color:#f51818;
+    color: #f1f1f1;
+    font-family: 'Franklin Gothic Medium';
+    font-size: Medium;
+    margin: 0;
+    position: absolute;
+    top: 4%;
+    left: 35%  
+  }
+  
+  .selectinterest
+   {
+    font-family:'Trebuchet MS';
+    font-size: 14px;
+  color: #012016; }
+  
+
+  input[type=checkbox] {
+    font-family:'Trebuchet MS';
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+  
+    table.db-table
+   		{ 
+        border-right:1px solid #ccc; border-bottom:1px solid #ccc; 
+      }
+table.db-table th
+	    { 
+    background:#eee; padding:5px; border-left:1px solid #ccc; border-top:1px solid #ccc;
+      }
+table.db-table td
+	{ 
+    padding:5px; border-left:1px solid #ccc; border-top:1px solid #ccc; 
+  }
